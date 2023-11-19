@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on linux)" generated="20231119 22:40:32.354" rpa="false" schemaversion="4">
+<suite id="s1" name="Login" source="/home/joktus/koulu/ohtu/palautusrepositorio/viikko3/login-robot/src/tests/login.robot">
+<test id="s1-t1" name="Login With Correct Credentials" line="6">
+<kw name="Create User And Input Login Command" type="SETUP">
+<kw name="Create User" library="AppLibrary">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<status status="PASS" starttime="20231119 22:40:32.366" endtime="20231119 22:40:32.366"/>
+</kw>
+<kw name="Input Login Command" library="resource">
+<kw name="Input" library="AppLibrary">
+<arg>login</arg>
+<status status="PASS" starttime="20231119 22:40:32.366" endtime="20231119 22:40:32.366"/>
+</kw>
+<status status="PASS" starttime="20231119 22:40:32.366" endtime="20231119 22:40:32.366"/>
+</kw>
+<status status="PASS" starttime="20231119 22:40:32.366" endtime="20231119 22:40:32.366"/>
+</kw>
+<kw name="Input Credentials" library="resource">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<kw name="Input" library="AppLibrary">
+<arg>${username}</arg>
+<status status="PASS" starttime="20231119 22:40:32.366" endtime="20231119 22:40:32.366"/>
+</kw>
+<kw name="Input" library="AppLibrary">
+<arg>${password}</arg>
+<status status="PASS" starttime="20231119 22:40:32.367" endtime="20231119 22:40:32.367"/>
+</kw>
+<kw name="Run Application" library="AppLibrary">
+<status status="PASS" starttime="20231119 22:40:32.367" endtime="20231119 22:40:32.367"/>
+</kw>
+<status status="PASS" starttime="20231119 22:40:32.366" endtime="20231119 22:40:32.367"/>
+</kw>
+<kw name="Output Should Contain" library="AppLibrary">
+<arg>Logged in</arg>
+<status status="PASS" starttime="20231119 22:40:32.367" endtime="20231119 22:40:32.367"/>
+</kw>
+<status status="PASS" starttime="20231119 22:40:32.365" endtime="20231119 22:40:32.367"/>
+</test>
+<status status="PASS" starttime="20231119 22:40:32.355" endtime="20231119 22:40:32.367"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
